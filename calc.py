@@ -1,4 +1,4 @@
-
+#TEST
 allowedOps = ["+", "-", "/", "*"]
 op = input(f"Scegli l'operazione. Scegli tra: {allowedOps}")
 
