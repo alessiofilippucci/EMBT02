@@ -1,5 +1,5 @@
 #TEST
-allowedOps = ["+", "-", "/", "*"]
+allowedOps = ["+", "-", "/", "*",]
 op = input(f"Scegli l'operazione. Scegli tra: {allowedOps}")
 
 if op in allowedOps:
@@ -12,21 +12,38 @@ if op in allowedOps:
         
         res = None
 
-        if op == "+":
-            res = num1 + num2
-        elif op == "-":
-            res = num1 - num2
-        elif op == "*":
-            res = num1 * num2
-        elif op == "/":
-            if num2 == 0:
-                print(f"Divisione {num1}/0 impossibile")
-            elif num1 == 0 and num2 == 0:
-                print("Divisione 0/0 indefinita")
-            else:
-                res = num1 / num2
-        else:
-            print(f"Operzione {op} non ancora gestita")
+        # if op == "+":
+        #     res = num1 + num2
+        # elif op == "-":
+        #     res = num1 - num2
+        # elif op == "*":
+        #     res = num1 * num2
+        # elif op == "/":
+        #     if num2 == 0:
+        #         print(f"Divisione {num1}/0 impossibile")
+        #     elif num1 == 0 and num2 == 0:
+        #         print("Divisione 0/0 indefinita")
+        #     else:
+        #         res = num1 / num2
+        # else:
+        #     print(f"Operzione {op} non ancora gestita")
+        
+        match op:
+            case "+":
+                res = num1 + num2
+            case "-":
+                res = num1 - num2
+            case "*":
+                res = num1 * num2
+            case "/":
+                if num2 == 0:
+                    print(f"Divisione {num1}/0 impossibile")
+                elif num1 == 0 and num2 == 0:
+                    print("Divisione 0/0 indefinita")
+                else:
+                    res = num1 / num2
+            case _:
+                print(f"Operzione {op} non ancora gestita")
 
         if res != None:
             #print(f'{num1} {op} {num2} = {res}')
