@@ -43,7 +43,7 @@ if op in allowedOps:
                 else:
                     res = num1 / num2
             case _:
-                print(f"Operzione {op} non ancora gestita")
+                print(f"Operazione {op} non ancora gestita")
 
         if res != None:
             #print(f'{num1} {op} {num2} = {res}')
