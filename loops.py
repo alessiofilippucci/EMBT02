@@ -16,6 +16,23 @@
 # while(True):
 #     print("Infinte loop")
 
+
+# # BREAK
+
+# # allowedOps = ["+", "-", "/", "*",]
+
+# # op = input(f"Scegli l'operazione. Scegli tra: {allowedOps}")
+
+# # while(True):
+# #     op = input(f"Scegli l'operazione. Scegli tra: {allowedOps}")
+    
+# #     if op in allowedOps:
+# #         break
+    
+# #     print("Operazione scelta NON valida")
+
+# # print("Operazione scelta valida")
+
 allowedOps = ["+", "-", "/", "*",]
 msg = f"Scegli l'operazione. Scegli tra: {allowedOps}"
 
@@ -26,4 +43,3 @@ while(op not in allowedOps):
     op = input(msg)
 
 print("Operazione scelta valida")
-
