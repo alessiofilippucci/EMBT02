@@ -17,9 +17,13 @@
 #     print("Infinte loop")
 
 allowedOps = ["+", "-", "/", "*",]
-op = input(f"Scegli l'operazione. Scegli tra: {allowedOps}")
+msg = f"Scegli l'operazione. Scegli tra: {allowedOps}"
 
-if op in allowedOps:
-    print("Operazione scelta valida")
-else:
-    print("Operazione scelta non valida")
+op = input(msg)
+
+while(op not in allowedOps):
+    print("Operazione scelta NON valida")
+    op = input(msg)
+
+print("Operazione scelta valida")
+
