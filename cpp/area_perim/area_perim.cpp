@@ -24,8 +24,22 @@ int main() // Start of the main function
 
     // draw the rectangle
     cout << " Here is the rectangle: \n"; // Outputting a message indicating the rectangle drawing
-    
-    // Drawing the rectangle using the width and length provided by the user
+
+    for (int i = 0; i < lngth; i++) // Looping through the length of the rectangle
+    {
+        for (int j = 0; j < width; j++) // Looping through the width of the rectangle
+        {
+            if (i == 0 || i == lngth - 1 || j == 0 || j == width - 1) // Checking if the current position is on the border of the rectangle
+            {
+                cout << "*"; // Outputting a star to represent the border of the rectangle
+            }
+            else
+            {
+                cout << " "; // Outputting a space to represent the inside of the rectangle
+            }
+        }
+        cout << endl; // Outputting a newline character to move to the next line
+    }
 
     return 0; // Returning 0 to indicate successful program execution
 } // End of the main function
