@@ -19,23 +19,6 @@ int main()
         cout << "Numero è zero";
     }
 
-    if (num > 0)
-    {
-        cout << "Numero positivo";
-    }
-    else if (num < 0)
-    {
-        cout << "Numero negativo";
-    }
-    else if (num < 0)
-    {
-        cout << "Numero negativo";
-    }
-    else
-    {
-        cout << "Numero è zero";
-    }
-
     char op = '+';
 
     switch (op)
