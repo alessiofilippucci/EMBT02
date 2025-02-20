@@ -43,12 +43,12 @@ string getValue()
 }
 
 // program of function overloading when number of arguments vary
-int add(int a, int b)
+int sum(int a, int b)
 {
     return a + b;
 }
 
-int add(int a, int b, int c)
+int sum(int a, int b, int c)
 {
     return a + b + c;
 }
@@ -68,12 +68,12 @@ float mul(double x, int y)
 // returns integer
 int main()
 {
-    int a = 10, b = 20;
+    // int a = 10, b = 20;
 
-    // Calling above function to find max of 'a' and 'b'
-    int m = max(a, b);
+    // // Calling above function to find max of 'a' and 'b'
+    // int m = max(a, b);
 
-    cout << "m is " << m << endl;
+    // cout << "m is " << m << endl;
 
     string myString = "Hello, World!";
 
@@ -86,8 +86,11 @@ int main()
     funcWithPointer(&myString);
     cout << myString << endl;
 
-    string greeting = getValue();
-    cout << greeting << endl;
+    int res = mul(5.5, 6.3);
+    cout << res << endl;
+
+    // string greeting = getValue();
+    // cout << greeting << endl;
 
     return 0;
 }
