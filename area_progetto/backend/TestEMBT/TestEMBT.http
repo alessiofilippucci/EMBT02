@@ -1,0 +1,6 @@
+@TestEMBT_HostAddress = http://localhost:5128
+
+GET {{TestEMBT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
